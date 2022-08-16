@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastyfoods</title>
+    <link rel="stylesheet" href="css\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css\style.css" type="text/css">
+    <script type="text/javascript" src="js\javascript.js"  lang="javascript"></script>
+</head>
+<body>
+    <!-- Navigation bar start-->
+    <nav class="navbar navbar-expand-lg bg-warning" class="navigationbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images\tastyfoodicon.jpg"></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="starter.html">Starters</a></li>
+                  <li><a class="dropdown-item" href="salad.html">Salad</a></li>
+                  <li><a class="dropdown-item" href="biriyani.html">Biriyani</a></li>
+                  <li><a class="dropdown-item" href="desserts.html">Desserts</a></li>
+                  <li><a class="dropdown-item" href="meals.html">Meals</a></li>
+                  <li><a class="dropdown-item" href="riceandnoodles.html">Rice & Noodles</a></li>
+                  <li><a class="dropdown-item" href="hotbeverages.html">Hot Beverages</a></li>
+                  <li><a class="dropdown-item" href="coldbeverages.html">Cold Beverages</a></li>
+                  <li><a class="dropdown-item" href="arabic.html">Arabian Food</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Orders</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link " href="aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contactus.html">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation bar ends -->
+
+      <!-- body start -->
+      <div class="container text-align:center" style="height:580px ;">
+        <div class="row" style="margin-left:100px ; margin-top: 100px;">
+            <div class="col-4 feedback">
+              <div class="feedbackcustomermsg">
+                  <h2>Dear valued customer,</h2><br>
+                  <p  class="feedbackmsg">Greetings from TASTY FOOD Restuarant,</p>
+                  <p class="feedbackmsg">Your suggestion and opinions about our brand and services are valuable to us because you are the one revolves and experiences it every day, this allows us to evaluate, encourage and redefine ourselves.</p>
+              </div>
+            </div>
+            <div class="col-8 feedbackselect" id="feedbackOptionSelect">
+                    <p class="fd_selectoption">How would you rate your experience at Tasty Food Restaurant?</p>
+                    <ul class="feedbackOption">
+                      <li>
+                        <input class="form-check-input" type="radio" name="feedbackRadio" id="excellent" value="excellent">
+                        <label class="form-check-label" for="feedbackRadioSelect">
+                        &nbsp; Excellent &nbsp; &nbsp; 
+                        </label>
+                      </li>
+                      <li>
+                        <input class="form-check-input" type="radio" name="feedbackRadio" id="good" value="good">
+                        <label class="form-check-label" for="feedbackRadioSelect">
+                          &nbsp; Good &nbsp; &nbsp; 
+                        </label>
+                      </li>
+                      <li>
+                        <input class="form-check-input" type="radio" name="feedbackRadio" id="fine" value="fine">
+                        <label class="form-check-label" for="feedbackRadioSelect">
+                          &nbsp; Fine &nbsp; &nbsp; 
+                        </label>
+                      </li>
+                      <li>
+                        <input class="form-check-input" type="radio" name="feedbackRadio" id="average" value="average">
+                        <label class="form-check-label" for="feedbackRadioSelect">
+                          &nbsp; Average &nbsp; &nbsp; 
+                        </label>
+                      </li>
+                      <li>
+                        <input class="form-check-input" type="radio" name="feedbackRadio" id="poor" value="poor">
+                        <label class="form-check-label" for="feedbackRadioSelect">
+                          &nbsp; Poor &nbsp; &nbsp; 
+                      </li>
+                    </ul>   
+                    <!-- for feedback poor option --start-->
+                    <div class="col-8 feedbackselect" style="display:none" id="feedbackPoorMsg">
+                      <p class="fdPoorMsg">We regret the inconvenience caused!</p>
+                      <p class="fdPoorMsg">What would you suggest us to improve, so we can improve on that and provide you better experience in future!</p>
+                    </div>
+                    <div class="col-8 feedbackselect" class="form-floating" style="display:none; text-align: center;margin-bottom: 20px;" id="feedbackSuggestionMsg">
+                      <label for="floatingTextarea">Message</label>
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        
+                      <div style="margin-left: 150px;margin-top: 15px;">
+                        <button type="button" class="btn btn-warning" onclick="selectPoorOption();">Submit</button>
+                      </div>                    
+                    </div>
+                     <!-- for feedback poor option --ends-->
+
+                    <div style="margin-left: 230px;">
+                      <button type="button" class="btn btn-warning" onclick="selectOption();" id="btnSubmit">Submit</button>
+                    </div>                                                                     
+            </div>
+        
+          <!-- for excellent,good,fine,average options -->
+            <div class="col-8 feedbackselect" style="display:none" id="feedbackOptionMsg">
+                <p class="fdRateMsg">Thank you for your valuable feedback in helping us raise our standards!</p>
+            </div>
+
+        </div>
+      </div>
+      <!-- body ends -->
+
+      <!-- footer start -->
+      <div>
+          <p class="bg-warning" style="text-align:center">@ Copyright 2022 All Rights Reserved.</p>
+      </div>
+      <!-- footer ends -->
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js\bootstrap.js"  lang="javascript"></script>
+</body>
+</html>
