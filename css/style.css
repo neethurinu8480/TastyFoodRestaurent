@@ -6,7 +6,6 @@
      margin-bottom: 30px;
      font-size: 25px;
      color: rgba(0, 0, 0, 0.7);
-     /* height: 750px; */
 }
 .starter-veg-img{
      height: 250px;
@@ -16,7 +15,7 @@
      background-color:rgb(235, 176, 68);
 }
 .feedbackselect{
-     background-color:rgb(239, 223, 159)
+     background-color:rgb(239, 223, 159);
 }
 .feedbackcustomermsg{
      height: 250px;
@@ -73,8 +72,7 @@
 .contactUsOrders p {
      color: rgba(0, 0, 0, 0.7); 
      font-size: 18px;
-    /* line-height: 25px; */
-    margin-top: 50px;
+       margin-top: 50px;
 }
 
 
